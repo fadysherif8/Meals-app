@@ -13,7 +13,8 @@ class CategoriesScreen extends StatelessWidget {
         child: AppBar(
           systemOverlayStyle:
               SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-          title: const Text('DeliMeal'),
+          title:Text('DeliMeal'),
+          centerTitle: true,
         ),
       ),
       drawer: MainDrawer(),
