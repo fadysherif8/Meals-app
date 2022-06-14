@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '/widgets/main_drawer.dart';
-
 import '../dummy_data.dart';
 import '../widgets/category_item.dart';
 
@@ -9,6 +9,7 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+       systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.transparent),
         title: const Text('DeliMeal'),
       ),
       drawer: MainDrawer(),
