@@ -11,9 +11,10 @@ class CategoriesScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(40),
         child: AppBar(
-          systemOverlayStyle:
-              SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-          title:Text('DeliMeal'),
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent,
+          ),
+          title: Text('DeliMeal'),
           centerTitle: true,
         ),
       ),
