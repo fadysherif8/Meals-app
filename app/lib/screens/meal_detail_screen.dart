@@ -89,6 +89,21 @@ class MealDetailScreen extends StatelessWidget {
                 itemCount: selectedMeal.steps.length,
               ),
             ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: FloatingActionButton(
+                elevation: 12,
+                child: IconButton(
+                  onPressed: (() {
+                    //return null;
+                  }),
+                  icon: Icon(Icons.apple,
+                      color: selectedMeal.isVegan
+                          ? Colors.green
+                          : Colors.black26),
+                ),
+              ),
+            ),
           ],
         ),
       ),
