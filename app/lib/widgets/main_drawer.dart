@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_complete_guide/screens/favorites_screen.dart';
+import 'package:flutter_complete_guide/screens/vegan_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   Widget buildListTile(String title, IconData icon, Function tapHandler) {
@@ -41,6 +42,9 @@ class MainDrawer extends StatelessWidget {
         ),
         buildListTile('Favorites', Icons.star, () {
           Navigator.of(context).pushNamed(FavoritesScreen.routeName);
+        }),
+        buildListTile('Vegan', Icons.apple, () {
+          Navigator.of(context).pushNamed(VeganScreen.routeName);
         }),
       ],
     ));
